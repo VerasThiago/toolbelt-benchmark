@@ -1,0 +1,1 @@
+const { SessionManager } = require('vtex')

@@ -1,8 +1,0 @@
-src/
-.babelrc
-.eslintrc
-.gitignore
-package.json
-README.md
-webpack.config.js
-# foo.txt
