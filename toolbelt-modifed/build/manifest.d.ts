@@ -1,0 +1,11 @@
+export declare const MANIFEST_FILE_NAME = "manifest.json";
+export declare const getAppRoot: () => any;
+export declare const namePattern = "[\\w_-]+";
+export declare const vendorPattern = "[\\w_-]+";
+export declare const versionPattern = "\\d+\\.\\d+\\.\\d+(-.*)?";
+export declare const wildVersionPattern = "\\d+\\.((\\d+\\.\\d+)|(\\d+\\.x)|x)(-.*)?";
+export declare const getManifestPath: () => string;
+export declare const parseManifest: (content: string) => import("@vtex/api").AppManifest;
+export declare const validateAppManifest: (manifest: any) => void;
+export declare const getManifest: () => Promise<import("@vtex/api").AppManifest>;
+export declare const writeManifestSchema: () => Promise<void>;

@@ -1,0 +1,17 @@
+import { ManifestEditor } from '../../lib/manifest';
+export declare const workspaceMasterMessage: string;
+export declare const workspaceProductionMessage: (workspace: any) => string;
+export declare const promptWorkspaceMaster: (account: any) => Promise<boolean>;
+export declare const validateAppAction: (operation: string, app?: any) => Promise<boolean>;
+export declare const wildVersionByMajor: (v1: string) => string;
+export declare const extractVersionFromId: (v1: string) => string;
+export declare const pickLatestVersion: (versions: string[]) => string;
+export declare const handleError: import("ramda").CurriedFunction2<string, any, Promise<never>>;
+export declare const appLatestVersion: (app: string, version?: string) => Promise<string>;
+export declare const appLatestMajor: (app: string) => Promise<string>;
+export declare const appIdFromRegistry: (app: string, majorLocator: string) => Promise<string>;
+export declare function optionsFormatter(billingOptions: BillingOptions): any;
+export declare function checkBuilderHubMessage(cliRoute: string): Promise<any>;
+export declare function showBuilderHubMessage(message: string, showPrompt: boolean, manifest: ManifestEditor): Promise<void>;
+export declare const resolveAppId: (appName: string, appVersion: string) => Promise<string>;
+export declare const isLinked: (object: import("@vtex/api").AppManifest) => boolean;

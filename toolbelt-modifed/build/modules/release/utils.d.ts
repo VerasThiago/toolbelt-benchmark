@@ -1,0 +1,16 @@
+export declare const readVersion: () => any;
+export declare const incrementVersion: (rawOldVersion: string, releaseType: string, tagName: string) => any;
+export declare const commit: (tagName: string) => any;
+export declare const tag: (tagName: string) => any;
+export declare const push: (tagName: string) => any;
+export declare const gitStatus: () => any;
+export declare const checkNothingToCommit: () => boolean;
+export declare const checkIfGitPushWorks: () => void;
+export declare const preRelease: () => any;
+export declare const confirmRelease: () => Promise<boolean>;
+export declare const checkGit: () => void;
+export declare const checkIfInGitRepo: () => void;
+export declare const postRelease: () => any;
+export declare const add: () => any;
+export declare const updateChangelog: (changelogVersion: any) => void;
+export declare const bump: (newVersion: string) => void;

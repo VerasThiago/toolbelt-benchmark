@@ -1,0 +1,20 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const tslib_1 = require("tslib");
+const fs_extra_1 = require("fs-extra");
+const pipe_streams_to_promise_1 = tslib_1.__importDefault(require("pipe-streams-to-promise"));
+const request_1 = tslib_1.__importDefault(require("request"));
+const unzip_stream_1 = tslib_1.__importDefault(require("unzip-stream"));
+const urlForRepo = (repo, org) => `https://github.com/${org}/${repo}/archive/master.zip`;
+const fetchAndUnzip = async (url, path) => pipe_streams_to_promise_1.default([request_1.default(url), unzip_stream_1.default.Extract({ path })]);
+exports.clone = async (repo, org) => {
+    const cwd = process.cwd();
+    const url = urlForRepo(repo, org);
+    const destPath = `${cwd}/${repo}`;
+    const cloned = `${destPath}/${repo}-master`;
+    await fs_extra_1.ensureDir(destPath);
+    await fs_extra_1.emptyDir(destPath);
+    await fetchAndUnzip(url, destPath);
+    await fs_extra_1.copy(cloned, destPath);
+    await fs_extra_1.remove(cloned);
+};
