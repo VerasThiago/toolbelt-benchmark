@@ -3,12 +3,12 @@ Benchmarks created with hyperfine
 
 Using commonjs:
 
-| Command | Mean [ms] | Min…Max [ms] |
-|:---|---:|---:|
-| `node axios-require.js` | 38.9 ± 2.2 | 37.1…46.6 |
-| `node vtex-api-require.js` | 498.7 ± 15.0 | 467.6…528.9 |
-| `node simple-require.js` | 580.9 ± 15.7 | 547.8…619.8 |
-| `node destructure-require.js` | 589.3 ± 11.8 | 573.3…616.7 |
+| Command | Mean [ms] | Min [ms] | Max [ms] | Relative |
+|:---|---:|---:|---:|---:|
+| `node axios-require.js` | 43.9 ± 3.4 | 37.8 | 51.4 | 1.00 |
+| `node vtex-api-require.js` | 519.9 ± 24.6 | 482.4 | 607.7 | 11.83 ± 1.08 |
+| `node simple-require.js` | 577.1 ± 11.3 | 552.7 | 595.9 | 13.13 ± 1.06 |
+| `node destructure-require.js` | 580.9 ± 10.1 | 562.6 | 598.4 | 13.22 ± 1.06 |
 
 
 System:
