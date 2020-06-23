@@ -1,7 +1,5 @@
 #!/bin/bash
 
-set -euo pipefail
-
 display_info() {
   printf "Usage ./bench.sh resultsPath [OPT]\nOptions are:\n"
   printf "  -h: Show this message\n"

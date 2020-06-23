@@ -7,5 +7,5 @@ OUTDIR=$PWD/results
 mkdir -p $OUTDIR
 
 cd commonjs
-./bench.sh $OUTDIR
+./benchmark.sh $OUTDIR
 cd ..
