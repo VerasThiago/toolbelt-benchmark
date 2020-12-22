@@ -89,7 +89,7 @@
     "jsonwebtoken": "~8.5.1",
     "latest-version": "^4.0.0",
     "moment": "~2.24.0",
-    "node-notifier": "^6.0.0",
+    "node-notifier": "^8.0.1",
     "numbro": "2.1.0",
     "open": "^7.0.2",
     "opn": "~5.2.0",
