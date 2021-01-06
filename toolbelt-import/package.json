@@ -10,7 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "@vtex/api": "^6.31.1",
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "vtex": "^2.102.1"
   }
 }
