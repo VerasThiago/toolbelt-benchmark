@@ -86,7 +86,7 @@
     "js-yaml": "~3.13.1",
     "json-array-split": "~1.0.0",
     "json2csv": "~4.5.4",
-    "jsonwebtoken": "~8.5.1",
+    "jsonwebtoken": "~9.0.0",
     "latest-version": "^4.0.0",
     "moment": "~2.24.0",
     "node-notifier": "^6.0.0",
